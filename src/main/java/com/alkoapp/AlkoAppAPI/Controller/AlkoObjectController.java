@@ -10,6 +10,8 @@ import com.alkoapp.AlkoAppAPI.Model.AlkoObject;
 @RestController
 public class AlkoObjectController {
 
+    // https://secret-springs-79454.herokuapp.com/
+
     private List<AlkoObject> alkoObjectList = new ArrayList<AlkoObject>();
 
     public AlkoObjectController() {
@@ -58,16 +60,15 @@ public class AlkoObjectController {
     // return ResponseEntity.ok(alkoObjectList);
     // }
 
-    // @DeleteMapping(value = "/")
-    // public ResponseEntity<?> removeAlkoObjectList(@RequestParam(value="id")
-    // String id) {
-    // AlkoObject itemToRemove = null;
-    // for(AlkoObject bucket : alkoObjectList){
-    // if(bucket.getIdDrink() == id)
-    // itemToRemove = bucket;
-    // }
+    @DeleteMapping(value = "/removeObject")
+    public ResponseEntity<?> removeAlkoObjectList(@RequestParam(value = "idDrink") int idDrink) {
+        AlkoObject itemToRemove = null;
+        for (AlkoObject obj : alkoObjectList) {
+            if (obj.getIdDrink() == idDrink)
+                itemToRemove = obj;
+        }
 
-    // alkoObjectList.remove(itemToRemove);
-    // return ResponseEntity.ok(alkoObjectList);
-    // }
+        alkoObjectList.remove(itemToRemove);
+        return ResponseEntity.ok(alkoObjectList);
+    }
 }
