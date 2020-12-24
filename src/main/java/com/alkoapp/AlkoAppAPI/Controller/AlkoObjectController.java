@@ -15,7 +15,7 @@ public class AlkoObjectController {
     private List<AlkoObject> alkoObjectList = new ArrayList<AlkoObject>();
 
     public AlkoObjectController() {
-        alkoObjectList.add(new AlkoObject("TEST", "TEST", 0, false));
+        alkoObjectList.add(new AlkoObject("TEST", "TEST", 0));
     }
 
     @GetMapping("/")
@@ -40,12 +40,12 @@ public class AlkoObjectController {
 
     }
 
-    // http://localhost:8080/addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT
+    // /addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT
     @RequestMapping(value = "/addObject")
     public ResponseEntity<?> addToAlkoObjectList(@RequestParam(value = "strDrink") String strDrink,
             @RequestParam(value = "strDrinkThumb") String strDrinkThumb, @RequestParam(value = "idDrink") int idDrink) {
-        alkoObjectList.add(new AlkoObject(strDrink, strDrinkThumb, idDrink, false));
-        System.out.println(alkoObjectList);
+        alkoObjectList.add(new AlkoObject(strDrink, strDrinkThumb, idDrink));
+        //System.out.println(alkoObjectList);
         return ResponseEntity.ok(alkoObjectList);
     }
 
@@ -60,7 +60,10 @@ public class AlkoObjectController {
     // return ResponseEntity.ok(alkoObjectList);
     // }
 
-    @DeleteMapping(value = "/removeObject")
+
+    // /removeObject?idDrink=0
+    @RequestMapping(value = "/removeObject", produces = "application/json", 
+    method = {RequestMethod.GET, RequestMethod.PUT})
     public ResponseEntity<?> removeAlkoObjectList(@RequestParam(value = "idDrink") int idDrink) {
         AlkoObject itemToRemove = null;
         for (AlkoObject obj : alkoObjectList) {
@@ -71,4 +74,6 @@ public class AlkoObjectController {
         alkoObjectList.remove(itemToRemove);
         return ResponseEntity.ok(alkoObjectList);
     }
+
+
 }

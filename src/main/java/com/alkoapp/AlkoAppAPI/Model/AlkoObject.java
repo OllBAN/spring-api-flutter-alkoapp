@@ -6,21 +6,13 @@ public class AlkoObject {
     private String strDrink;
     private String strDrinkThumb;
     private int idDrink;
-    private boolean checkedDrink;
     
-    public AlkoObject(String strDrink, String strDrinkThumb, int idDrink, boolean checkedDrink){
+    public AlkoObject(String strDrink, String strDrinkThumb, int idDrink){
         this.strDrink= strDrink;
         this.strDrinkThumb = strDrinkThumb;
         this.idDrink = idDrink;
-        this.checkedDrink=checkedDrink;
     }
-    public boolean getCheckedDrink() {
-        return checkedDrink;
-    }
-    
-    public void setcCheckedDrink(boolean checkedDrink) {
-        this.checkedDrink = checkedDrink;
-    }
+
     
     public String getStrDrink() {
         return strDrink;
