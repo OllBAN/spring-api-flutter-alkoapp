@@ -15,7 +15,7 @@ public class AlkoObjectController {
     private List<AlkoObject> alkoObjectList = new ArrayList<AlkoObject>();
 
     public AlkoObjectController() {
-        alkoObjectList.add(new AlkoObject("TEST", "TEST", 0));
+        alkoObjectList.add(new AlkoObject("TEST", "https://www.thecocktaildb.com/images/ingredients/vodka-Small.png", 0));
     }
 
     @GetMapping("/")
@@ -48,17 +48,6 @@ public class AlkoObjectController {
         //System.out.println(alkoObjectList);
         return ResponseEntity.ok(alkoObjectList);
     }
-
-    // @PutMapping(value = "/")
-    // public ResponseEntity<?> updateAlkoObjectList(@RequestParam(value="strDrink")
-    // String strDrink, @RequestParam(value="idDrink") String idDrink) {
-    // alkoObjectList.forEach(alkoObjectList -> {
-    // if(alkoObjectList.getIdDrink() == idDrink){
-    // alkoObjectList.setStrDrink(strDrink);
-    // }
-    // });
-    // return ResponseEntity.ok(alkoObjectList);
-    // }
 
 
     // /removeObject?idDrink=0
