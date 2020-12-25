@@ -3,6 +3,8 @@ Spring API för flutter-alkoapp
 
 API för flutter-AlkoApp.
 
+#### Get list
+/
 
 #### Get object
 
