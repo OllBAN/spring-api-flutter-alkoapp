@@ -3,11 +3,15 @@ Spring API för flutter-alkoapp
 
 API för flutter-AlkoApp.
 
-Get object
+
+#### Get object
+
 /getObject?idDrink=TEXT
 
-Add object
+#### Add object
+
 /addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT
 
-Remove object
+#### Remove object
+
 /removeObject?idDrink=0
