@@ -15,7 +15,7 @@ public class AlkoObjectController {
     private List<AlkoObject> alkoObjectList = new ArrayList<AlkoObject>();
 
     public AlkoObjectController() {
-        alkoObjectList.add(new AlkoObject("TEST", "https://www.thecocktaildb.com/images/ingredients/vodka-Small.png", 0));
+        alkoObjectList.add(new AlkoObject("Example", "https://www.thecocktaildb.com/images/ingredients/vodka-Small.png", 12418));
     }
 
     @GetMapping("/")
