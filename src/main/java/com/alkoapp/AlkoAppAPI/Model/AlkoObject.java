@@ -2,67 +2,129 @@ package com.alkoapp.AlkoAppAPI.Model;
 
 public class AlkoObject {
 
-private String idDrink;
+    
+
+private int idDrink;
 private String strDrink;
-private Object strDrinkAlternate;
-private Object strDrinkES;
-private Object strDrinkDE;
-private Object strDrinkFR;
-private Object strDrinkZHHANS;
-private Object strDrinkZHHANT;
+private String strDrinkAlternate;
+private String strDrinkES;
+private String strDrinkDE;
+private String strDrinkFR;
+private String strDrinkZHHANS;
+private String strDrinkZHHANT;
 private String strTags;
-private Object strVideo;
+private String strVideo;
 private String strCategory;
 private String strIBA;
 private String strAlcoholic;
 private String strGlass;
 private String strInstructions;
-private Object strInstructionsES;
+private String strInstructionsES;
 private String strInstructionsDE;
-private Object strInstructionsFR;
-private Object strInstructionsZHHANS;
-private Object strInstructionsZHHANT;
+private String strInstructionsFR;
+private String strInstructionsZHHANS;
+private String strInstructionsZHHANT;
 private String strDrinkThumb;
 private String strIngredient1;
 private String strIngredient2;
 private String strIngredient3;
 private String strIngredient4;
-private Object strIngredient5;
-private Object strIngredient6;
-private Object strIngredient7;
-private Object strIngredient8;
-private Object strIngredient9;
-private Object strIngredient10;
-private Object strIngredient11;
-private Object strIngredient12;
-private Object strIngredient13;
-private Object strIngredient14;
-private Object strIngredient15;
+private String strIngredient5;
+private String strIngredient6;
+private String strIngredient7;
+private String strIngredient8;
+private String strIngredient9;
+private String strIngredient10;
+private String strIngredient11;
+private String strIngredient12;
+private String strIngredient13;
+private String strIngredient14;
+private String strIngredient15;
 private String strMeasure1;
 private String strMeasure2;
 private String strMeasure3;
-private Object strMeasure4;
-private Object strMeasure5;
-private Object strMeasure6;
-private Object strMeasure7;
-private Object strMeasure8;
-private Object strMeasure9;
-private Object strMeasure10;
-private Object strMeasure11;
-private Object strMeasure12;
-private Object strMeasure13;
-private Object strMeasure14;
-private Object strMeasure15;
+private String strMeasure4;
+private String strMeasure5;
+private String strMeasure6;
+private String strMeasure7;
+private String strMeasure8;
+private String strMeasure9;
+private String strMeasure10;
+private String strMeasure11;
+private String strMeasure12;
+private String strMeasure13;
+private String strMeasure14;
+private String strMeasure15;
 private String strImageSource;
 private String strImageAttribution;
 private String strCreativeCommonsConfirmed;
 private String dateModified;
 
-public String getIdDrink() {
+
+public AlkoObject(int idDrink, String strDrink, String strDrinkAlternate, String strDrinkES, String strDrinkDE, String strDrinkFR, String strDrinkZHHANS, String strDrinkZHHANT, String strTags, String strVideo, String strCategory, String strIBA, String strAlcoholic, String strGlass, String strInstructions, String strInstructionsES, String strInstructionsDE, String strInstructionsFR, String strInstructionsZHHANS, String strInstructionsZHHANT, String strDrinkThumb, String strIngredient1, String strIngredient2, String strIngredient3, String strIngredient4, String strIngredient5, String strIngredient6, String strIngredient7, String strIngredient8, String strIngredient9, String strIngredient10, String strIngredient11, String strIngredient12, String strIngredient13, String strIngredient14, String strIngredient15, String strMeasure1, String strMeasure2, String strMeasure3, String strMeasure4, String strMeasure5, String strMeasure6, String strMeasure7, String strMeasure8, String strMeasure9, String strMeasure10, String strMeasure11, String strMeasure12, String strMeasure13, String strMeasure14, String strMeasure15, String strImageSource, String strImageAttribution, String strCreativeCommonsConfirmed, String dateModified) {
+    super();
+    this.idDrink = idDrink;
+    this.strDrink = strDrink;
+    this.strDrinkAlternate = strDrinkAlternate;
+    this.strDrinkES = strDrinkES;
+    this.strDrinkDE = strDrinkDE;
+    this.strDrinkFR = strDrinkFR;
+    this.strDrinkZHHANS = strDrinkZHHANS;
+    this.strDrinkZHHANT = strDrinkZHHANT;
+    this.strTags = strTags;
+    this.strVideo = strVideo;
+    this.strCategory = strCategory;
+    this.strIBA = strIBA;
+    this.strAlcoholic = strAlcoholic;
+    this.strGlass = strGlass;
+    this.strInstructions = strInstructions;
+    this.strInstructionsES = strInstructionsES;
+    this.strInstructionsDE = strInstructionsDE;
+    this.strInstructionsFR = strInstructionsFR;
+    this.strInstructionsZHHANS = strInstructionsZHHANS;
+    this.strInstructionsZHHANT = strInstructionsZHHANT;
+    this.strDrinkThumb = strDrinkThumb;
+    this.strIngredient1 = strIngredient1;
+    this.strIngredient2 = strIngredient2;
+    this.strIngredient3 = strIngredient3;
+    this.strIngredient4 = strIngredient4;
+    this.strIngredient5 = strIngredient5;
+    this.strIngredient6 = strIngredient6;
+    this.strIngredient7 = strIngredient7;
+    this.strIngredient8 = strIngredient8;
+    this.strIngredient9 = strIngredient9;
+    this.strIngredient10 = strIngredient10;
+    this.strIngredient11 = strIngredient11;
+    this.strIngredient12 = strIngredient12;
+    this.strIngredient13 = strIngredient13;
+    this.strIngredient14 = strIngredient14;
+    this.strIngredient15 = strIngredient15;
+    this.strMeasure1 = strMeasure1;
+    this.strMeasure2 = strMeasure2;
+    this.strMeasure3 = strMeasure3;
+    this.strMeasure4 = strMeasure4;
+    this.strMeasure5 = strMeasure5;
+    this.strMeasure6 = strMeasure6;
+    this.strMeasure7 = strMeasure7;
+    this.strMeasure8 = strMeasure8;
+    this.strMeasure9 = strMeasure9;
+    this.strMeasure10 = strMeasure10;
+    this.strMeasure11 = strMeasure11;
+    this.strMeasure12 = strMeasure12;
+    this.strMeasure13 = strMeasure13;
+    this.strMeasure14 = strMeasure14;
+    this.strMeasure15 = strMeasure15;
+    this.strImageSource = strImageSource;
+    this.strImageAttribution = strImageAttribution;
+    this.strCreativeCommonsConfirmed = strCreativeCommonsConfirmed;
+    this.dateModified = dateModified;
+    }
+
+public int getIdDrink() {
 return idDrink;
 }
 
-public void setIdDrink(String idDrink) {
+public void setIdDrink(int idDrink) {
 this.idDrink = idDrink;
 }
 
@@ -74,51 +136,51 @@ public void setStrDrink(String strDrink) {
 this.strDrink = strDrink;
 }
 
-public Object getStrDrinkAlternate() {
+public String getStrDrinkAlternate() {
 return strDrinkAlternate;
 }
 
-public void setStrDrinkAlternate(Object strDrinkAlternate) {
+public void setStrDrinkAlternate(String strDrinkAlternate) {
 this.strDrinkAlternate = strDrinkAlternate;
 }
 
-public Object getStrDrinkES() {
+public String getStrDrinkES() {
 return strDrinkES;
 }
 
-public void setStrDrinkES(Object strDrinkES) {
+public void setStrDrinkES(String strDrinkES) {
 this.strDrinkES = strDrinkES;
 }
 
-public Object getStrDrinkDE() {
+public String getStrDrinkDE() {
 return strDrinkDE;
 }
 
-public void setStrDrinkDE(Object strDrinkDE) {
+public void setStrDrinkDE(String strDrinkDE) {
 this.strDrinkDE = strDrinkDE;
 }
 
-public Object getStrDrinkFR() {
+public String getStrDrinkFR() {
 return strDrinkFR;
 }
 
-public void setStrDrinkFR(Object strDrinkFR) {
+public void setStrDrinkFR(String strDrinkFR) {
 this.strDrinkFR = strDrinkFR;
 }
 
-public Object getStrDrinkZHHANS() {
+public String getStrDrinkZHHANS() {
 return strDrinkZHHANS;
 }
 
-public void setStrDrinkZHHANS(Object strDrinkZHHANS) {
+public void setStrDrinkZHHANS(String strDrinkZHHANS) {
 this.strDrinkZHHANS = strDrinkZHHANS;
 }
 
-public Object getStrDrinkZHHANT() {
+public String getStrDrinkZHHANT() {
 return strDrinkZHHANT;
 }
 
-public void setStrDrinkZHHANT(Object strDrinkZHHANT) {
+public void setStrDrinkZHHANT(String strDrinkZHHANT) {
 this.strDrinkZHHANT = strDrinkZHHANT;
 }
 
@@ -130,11 +192,11 @@ public void setStrTags(String strTags) {
 this.strTags = strTags;
 }
 
-public Object getStrVideo() {
+public String getStrVideo() {
 return strVideo;
 }
 
-public void setStrVideo(Object strVideo) {
+public void setStrVideo(String strVideo) {
 this.strVideo = strVideo;
 }
 
@@ -178,11 +240,11 @@ public void setStrInstructions(String strInstructions) {
 this.strInstructions = strInstructions;
 }
 
-public Object getStrInstructionsES() {
+public String getStrInstructionsES() {
 return strInstructionsES;
 }
 
-public void setStrInstructionsES(Object strInstructionsES) {
+public void setStrInstructionsES(String strInstructionsES) {
 this.strInstructionsES = strInstructionsES;
 }
 
@@ -194,27 +256,27 @@ public void setStrInstructionsDE(String strInstructionsDE) {
 this.strInstructionsDE = strInstructionsDE;
 }
 
-public Object getStrInstructionsFR() {
+public String getStrInstructionsFR() {
 return strInstructionsFR;
 }
 
-public void setStrInstructionsFR(Object strInstructionsFR) {
+public void setStrInstructionsFR(String strInstructionsFR) {
 this.strInstructionsFR = strInstructionsFR;
 }
 
-public Object getStrInstructionsZHHANS() {
+public String getStrInstructionsZHHANS() {
 return strInstructionsZHHANS;
 }
 
-public void setStrInstructionsZHHANS(Object strInstructionsZHHANS) {
+public void setStrInstructionsZHHANS(String strInstructionsZHHANS) {
 this.strInstructionsZHHANS = strInstructionsZHHANS;
 }
 
-public Object getStrInstructionsZHHANT() {
+public String getStrInstructionsZHHANT() {
 return strInstructionsZHHANT;
 }
 
-public void setStrInstructionsZHHANT(Object strInstructionsZHHANT) {
+public void setStrInstructionsZHHANT(String strInstructionsZHHANT) {
 this.strInstructionsZHHANT = strInstructionsZHHANT;
 }
 
@@ -258,91 +320,91 @@ public void setStrIngredient4(String strIngredient4) {
 this.strIngredient4 = strIngredient4;
 }
 
-public Object getStrIngredient5() {
+public String getStrIngredient5() {
 return strIngredient5;
 }
 
-public void setStrIngredient5(Object strIngredient5) {
+public void setStrIngredient5(String strIngredient5) {
 this.strIngredient5 = strIngredient5;
 }
 
-public Object getStrIngredient6() {
+public String getStrIngredient6() {
 return strIngredient6;
 }
 
-public void setStrIngredient6(Object strIngredient6) {
+public void setStrIngredient6(String strIngredient6) {
 this.strIngredient6 = strIngredient6;
 }
 
-public Object getStrIngredient7() {
+public String getStrIngredient7() {
 return strIngredient7;
 }
 
-public void setStrIngredient7(Object strIngredient7) {
+public void setStrIngredient7(String strIngredient7) {
 this.strIngredient7 = strIngredient7;
 }
 
-public Object getStrIngredient8() {
+public String getStrIngredient8() {
 return strIngredient8;
 }
 
-public void setStrIngredient8(Object strIngredient8) {
+public void setStrIngredient8(String strIngredient8) {
 this.strIngredient8 = strIngredient8;
 }
 
-public Object getStrIngredient9() {
+public String getStrIngredient9() {
 return strIngredient9;
 }
 
-public void setStrIngredient9(Object strIngredient9) {
+public void setStrIngredient9(String strIngredient9) {
 this.strIngredient9 = strIngredient9;
 }
 
-public Object getStrIngredient10() {
+public String getStrIngredient10() {
 return strIngredient10;
 }
 
-public void setStrIngredient10(Object strIngredient10) {
+public void setStrIngredient10(String strIngredient10) {
 this.strIngredient10 = strIngredient10;
 }
 
-public Object getStrIngredient11() {
+public String getStrIngredient11() {
 return strIngredient11;
 }
 
-public void setStrIngredient11(Object strIngredient11) {
+public void setStrIngredient11(String strIngredient11) {
 this.strIngredient11 = strIngredient11;
 }
 
-public Object getStrIngredient12() {
+public String getStrIngredient12() {
 return strIngredient12;
 }
 
-public void setStrIngredient12(Object strIngredient12) {
+public void setStrIngredient12(String strIngredient12) {
 this.strIngredient12 = strIngredient12;
 }
 
-public Object getStrIngredient13() {
+public String getStrIngredient13() {
 return strIngredient13;
 }
 
-public void setStrIngredient13(Object strIngredient13) {
+public void setStrIngredient13(String strIngredient13) {
 this.strIngredient13 = strIngredient13;
 }
 
-public Object getStrIngredient14() {
+public String getStrIngredient14() {
 return strIngredient14;
 }
 
-public void setStrIngredient14(Object strIngredient14) {
+public void setStrIngredient14(String strIngredient14) {
 this.strIngredient14 = strIngredient14;
 }
 
-public Object getStrIngredient15() {
+public String getStrIngredient15() {
 return strIngredient15;
 }
 
-public void setStrIngredient15(Object strIngredient15) {
+public void setStrIngredient15(String strIngredient15) {
 this.strIngredient15 = strIngredient15;
 }
 
@@ -370,99 +432,99 @@ public void setStrMeasure3(String strMeasure3) {
 this.strMeasure3 = strMeasure3;
 }
 
-public Object getStrMeasure4() {
+public String getStrMeasure4() {
 return strMeasure4;
 }
 
-public void setStrMeasure4(Object strMeasure4) {
+public void setStrMeasure4(String strMeasure4) {
 this.strMeasure4 = strMeasure4;
 }
 
-public Object getStrMeasure5() {
+public String getStrMeasure5() {
 return strMeasure5;
 }
 
-public void setStrMeasure5(Object strMeasure5) {
+public void setStrMeasure5(String strMeasure5) {
 this.strMeasure5 = strMeasure5;
 }
 
-public Object getStrMeasure6() {
+public String getStrMeasure6() {
 return strMeasure6;
 }
 
-public void setStrMeasure6(Object strMeasure6) {
+public void setStrMeasure6(String strMeasure6) {
 this.strMeasure6 = strMeasure6;
 }
 
-public Object getStrMeasure7() {
+public String getStrMeasure7() {
 return strMeasure7;
 }
 
-public void setStrMeasure7(Object strMeasure7) {
+public void setStrMeasure7(String strMeasure7) {
 this.strMeasure7 = strMeasure7;
 }
 
-public Object getStrMeasure8() {
+public String getStrMeasure8() {
 return strMeasure8;
 }
 
-public void setStrMeasure8(Object strMeasure8) {
+public void setStrMeasure8(String strMeasure8) {
 this.strMeasure8 = strMeasure8;
 }
 
-public Object getStrMeasure9() {
+public String getStrMeasure9() {
 return strMeasure9;
 }
 
-public void setStrMeasure9(Object strMeasure9) {
+public void setStrMeasure9(String strMeasure9) {
 this.strMeasure9 = strMeasure9;
 }
 
-public Object getStrMeasure10() {
+public String getStrMeasure10() {
 return strMeasure10;
 }
 
-public void setStrMeasure10(Object strMeasure10) {
+public void setStrMeasure10(String strMeasure10) {
 this.strMeasure10 = strMeasure10;
 }
 
-public Object getStrMeasure11() {
+public String getStrMeasure11() {
 return strMeasure11;
 }
 
-public void setStrMeasure11(Object strMeasure11) {
+public void setStrMeasure11(String strMeasure11) {
 this.strMeasure11 = strMeasure11;
 }
 
-public Object getStrMeasure12() {
+public String getStrMeasure12() {
 return strMeasure12;
 }
 
-public void setStrMeasure12(Object strMeasure12) {
+public void setStrMeasure12(String strMeasure12) {
 this.strMeasure12 = strMeasure12;
 }
 
-public Object getStrMeasure13() {
+public String getStrMeasure13() {
 return strMeasure13;
 }
 
-public void setStrMeasure13(Object strMeasure13) {
+public void setStrMeasure13(String strMeasure13) {
 this.strMeasure13 = strMeasure13;
 }
 
-public Object getStrMeasure14() {
+public String getStrMeasure14() {
 return strMeasure14;
 }
 
-public void setStrMeasure14(Object strMeasure14) {
+public void setStrMeasure14(String strMeasure14) {
 this.strMeasure14 = strMeasure14;
 }
 
-public Object getStrMeasure15() {
+public String getStrMeasure15() {
 return strMeasure15;
 }
 
-public void setStrMeasure15(Object strMeasure15) {
+public void setStrMeasure15(String strMeasure15) {
 this.strMeasure15 = strMeasure15;
 }
 
