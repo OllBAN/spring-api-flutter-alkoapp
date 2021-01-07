@@ -7,8 +7,6 @@ import java.util.List;
 
 import com.alkoapp.AlkoAppAPI.Model.AlkoObject;
 
-import com.alkoapp.AlkoAppAPI.Model.AlkoObject;
-
 @RestController
 public class AlkoObjectController {
 
@@ -18,13 +16,12 @@ public class AlkoObjectController {
 
     public AlkoObjectController() {
         
-          alkoObjectList.add(new AlkoObject(11007, "Example", null, null, null, null, null, null, null, null, null, null,
-          null, null, null, null, null, null, null, null, "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg", null, null,
+          alkoObjectList.add(new AlkoObject(11007, "Example", "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
+          null, null, null, null, null, null, null, null, null, null,
           null, null, null, null, null, null,
           null, null, null, null, null, null,
           null, null, null, null, null, null, null,
-          null, null, null, null, null, null, null,
-          null, null, null, null, null, null));
+          null));
          
     }
 
@@ -50,7 +47,9 @@ public class AlkoObjectController {
 
     }
 
-    // /addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT
+    // /addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT&strIngredient1=TEXT&strIngredient2=TEXT&strIngredient3=TEXT&strIngredient4=TEXT&strIngredient5=TEXT&strIngredient6=TEXT&
+    // strIngredient7=TEXT&strIngredient8=TEXT&strIngredient9=TEXT&strIngredient10=TEXT&strIngredient11=TEXT&strIngredient12=TEXT&strIngredient13=TEXT&strIngredient14=TEXT&strIngredient15=TEXT&strMeasure1=TEXT&strMeasure2=TEXT&strMeasure3=TEXT&
+    //strMeasure4=TEXT&strMeasure5=TEXT&strMeasure6=TEXT&strMeasure7=TEXT&strMeasure8=TEXT&strMeasure9=TEXT&strMeasure10=TEXT&strMeasure11=TEXT&strMeasure12=TEXT&strMeasure13=TEXT&strMeasure14=TEXT&strMeasure15=TEXT&
     @RequestMapping(value = "/addObject")
     public ResponseEntity<?> addToAlkoObjectList(@RequestParam(value = "strDrink") String strDrink,
             @RequestParam(value = "strDrinkThumb") String strDrinkThumb, @RequestParam(value = "idDrink") int idDrink,
@@ -85,24 +84,13 @@ public class AlkoObjectController {
             @RequestParam(value = "strMeasure14") String strMeasure14,
             @RequestParam(value = "strMeasure15") String strMeasure15) {
 
-        alkoObjectList.add(new AlkoObject(idDrink, strDrink, null, null, null, null, null, null, null, null, null, null,
-                null, null, null, null, null, null, null, null, strDrinkThumb, strIngredient1, strIngredient2,
+        alkoObjectList.add(new AlkoObject(idDrink, strDrink, strDrinkThumb, strIngredient1, strIngredient2,
                 strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8,
                 strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14,
                 strIngredient15, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6,
                 strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13,
-                strMeasure14, strMeasure15, null, null, null, null));
+                strMeasure14, strMeasure15));
 
-        /*
-         * alkoObjectList.add(new AlkoObject(strDrink, strDrinkThumb, idDrink,
-         * strIngredient1, strIngredient2, strIngredient3, strIngredient4,
-         * strIngredient5, strIngredient6, strIngredient7, strIngredient8,
-         * strIngredient9, strIngredient10, strIngredient11, strIngredient12,
-         * strIngredient13, strIngredient14, strIngredient15, strMeasure1, strMeasure2,
-         * strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8,
-         * strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13,
-         * strMeasure14, strMeasure15)); //System.out.println(alkoObjectList);
-         */
         return ResponseEntity.ok(alkoObjectList);
     }
 
