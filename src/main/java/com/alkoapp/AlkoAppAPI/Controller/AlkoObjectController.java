@@ -17,7 +17,7 @@ public class AlkoObjectController {
     public AlkoObjectController() {
         
           alkoObjectList.add(new AlkoObject(11007, "Example", "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
-          null, null, null, null, null, null, null, null, null, null,
+          "Gin", "Vodka", "niklas", null, null, null, null, null, null, null,
           null, null, null, null, null, null,
           null, null, null, null, null, null,
           null, null, null, null, null, null, null,
