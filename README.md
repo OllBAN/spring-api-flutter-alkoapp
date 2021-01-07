@@ -12,7 +12,7 @@ API för flutter-AlkoApp.
 
 #### Add object
 
-/addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT
+/addObject?strDrink=TEXT&strDrinkThumb=TEXT&idDrink=TEXT......
 
 #### Remove object
 
